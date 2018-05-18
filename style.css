@@ -1,0 +1,153 @@
+/****************************************
+    Common Styles 
+****************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    color: #2d3c49;
+    font-family: Open Sans, sans-serif; 
+}
+
+body {
+    padding: 30px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/****************************************
+    Header Styles
+****************************************/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    text-transform: uppercase;
+
+    border-bottom: 2px solid #7d97ad;
+
+    padding-bottom: 30px;
+}
+
+.header__title {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.header__subtitle {
+    font-size: 25px;
+}
+
+
+/****************************************
+    Main Section
+****************************************/
+
+.content {
+    
+}
+
+/* Main Image */
+
+.content__main-photo {
+    padding: 30px 0;
+}
+
+.image {
+    width: 100%;
+    min-height: 300px;
+
+    background-color: #7d97ad; 
+}
+
+/* Projects */
+
+.content__projects {
+    padding: 30px 0;
+}
+
+.content__subtitle {
+    color: #7d97ad
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.project__image {
+    max-width: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/****************************************
+    Footer
+****************************************/
+
+.footer {
+
+}
+
+
+/****************************************
+    Media Queries 
+****************************************/
+
+/* Phones */
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 20px 10px;
+    }
+
+
+    .header {
+        padding-bottom: 20px;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+    .header__title {
+        font-size: 25px;
+    }
+
+    .header__subtitle {
+        font-size: 15px;
+    }
+
+
+    .content {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header__title {
+        font-size: 35px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+    }
+}
